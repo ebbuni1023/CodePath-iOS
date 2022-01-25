@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E5C4B91279FB0B100DB3E0A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C4B90279FB0B100DB3E0A /* SettingsViewController.swift */; };
+		8E5C4B93279FBBAE00DB3E0A /* TipCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C4B92279FBBAE00DB3E0A /* TipCalc.swift */; };
 		8EB56F04278EB394005554C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB56F03278EB394005554C7 /* AppDelegate.swift */; };
 		8EB56F06278EB394005554C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB56F05278EB394005554C7 /* SceneDelegate.swift */; };
 		8EB56F08278EB394005554C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB56F07278EB394005554C7 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		8E5C4B90279FB0B100DB3E0A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8E5C4B92279FBBAE00DB3E0A /* TipCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalc.swift; sourceTree = "<group>"; };
 		8EB56F00278EB394005554C7 /* Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB56F03278EB394005554C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB56F05278EB394005554C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				8EB56F0E278EB395005554C7 /* LaunchScreen.storyboard */,
 				8EB56F11278EB395005554C7 /* Info.plist */,
 				8E5C4B90279FB0B100DB3E0A /* SettingsViewController.swift */,
+				8E5C4B92279FBBAE00DB3E0A /* TipCalc.swift */,
 			);
 			path = Prework;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				8EB56F04278EB394005554C7 /* AppDelegate.swift in Sources */,
 				8EB56F06278EB394005554C7 /* SceneDelegate.swift in Sources */,
 				8E5C4B91279FB0B100DB3E0A /* SettingsViewController.swift in Sources */,
+				8E5C4B93279FBBAE00DB3E0A /* TipCalc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
