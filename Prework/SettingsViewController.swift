@@ -9,6 +9,7 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var darkSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +17,14 @@ class SettingsViewController: UIViewController {
     }
     
 
+    @IBAction func darkSwitchControl(_ sender: Any) {
+        if darkSwitch.isOn == true {
+            view.backgroundColor = UIColor.black
+            
+        } else {
+            view.backgroundColor = UIColor.white
+        }
+    }
     /*
     // MARK: - Navigation
 
