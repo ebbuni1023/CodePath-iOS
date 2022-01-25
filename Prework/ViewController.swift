@@ -17,13 +17,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var personControl: UIStepper!
     @IBOutlet weak var personPrice: UILabel!
     
-    let tipCalc = TipCalc(amountBeforeTax: 20.00, tipPercentage: 0.15)
+    @IBOutlet weak var darkSwitch: UISwitch!
+    var tipCalc = TipCalc(amountBeforeTax: 0, tipPercentage: 0)
     
+    func calculateTip() {
+        
+    }
+    
+    func updateUI() {
+        
+    }
+    
+    func tipControls() {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        billAmountTextField.text = String(format: "$%0.2f", arguments: [tipCalc.amountBeforeTax])
-//        tipAmountLabel.text = String(format: "$%0.2f", arguments: [tipCalc.amountBeforeTax * tipCalc.tipPercentage])
+        billAmountTextField.becomeFirstResponder()
+        
         billAmountTextField.text = "$0.00"
         tipAmountLabel.text = "$0.00"
         totalLabel.text = "$0.00"
@@ -41,6 +52,12 @@ class ViewController: UIViewController {
         print("view will appear")
         // This is a good place to retrieve the default tip percentage from UserDefaults
         // and use it to update the tip amount
+        
+        tipControl.selectedSegmentIndex = 1
+        
+        if billAmountTextField.text?.count == 0 {
+            billAmountTextField.becomeFirstResponder()
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -63,7 +80,18 @@ class ViewController: UIViewController {
         personLabel.text = Int(sender.value).description
     }
     
-    
+    @IBAction func darkModeControl(_ sender: Any) {
+        if darkSwitch.isOn == true {
+            
+            view.overrideUserInterfaceStyle = .dark
+//            view.backgroundColor = UIColor.darkGray
+            
+        } else {
+//            view.backgroundColor = UIColor.white
+            view.overrideUserInterfaceStyle = .light
+    }
+    }
+        
     @IBAction func cacluateTip(_ sender: Any) {
         let bill = Double(billAmountTextField.text!) ?? 0
         

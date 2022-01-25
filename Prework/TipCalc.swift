@@ -9,12 +9,12 @@ import Foundation
 
 class TipCalc
 {
-    var tipAmount: Float = 0
-    var amountBeforeTax: Float = 0
-    var tipPercentage: Float = 0
-    var totalAmount: Float = 0
+    var tipAmount: Double = 0
+    var amountBeforeTax: Double = 0
+    var tipPercentage: Double = 0
+    var totalAmount: Double = 0
     
-    init (amountBeforeTax: Float, tipPercentage: Float)
+    init (amountBeforeTax: Double, tipPercentage: Double)
     {
         self.amountBeforeTax = amountBeforeTax
         self.tipPercentage = tipPercentage
